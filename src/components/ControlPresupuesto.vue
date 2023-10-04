@@ -9,7 +9,9 @@
 
         </div>
         <div class="contenedor-presupuesto">
-            <button class="reset-app">Resetear App</button>
+            <button class="reset-app">
+                Resetear App
+            </button>
             <p>
                 <span>Presupuesto:</span>
                 $0
@@ -28,4 +30,62 @@
 
 <style scoped>
 
+    .reset-app {
+        background-color: #DB2777;
+        border: none;
+        padding: 1rem;
+        width: 100%;
+        color: var(--white);
+        font-weight: 900;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        transition-property: background-color;
+        transition-duration: 300ms;
+    }
+
+    .reset-app:hover {
+        cursor: pointer;
+        background-color: #ae1a5c;
+    }
+    .dos-columnas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dos-columnas > :first-child {
+        margin-bottom: 4rem;
+    }
+
+    @media (min-width: 768px) {
+        .dos-columnas {
+            flex-direction: row;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .dos-columnas > :first-child {
+            margin-bottom: 0rem;
+        }
+    }
+
+    .contenedor-presupuesto {
+        width: 100%;
+    }
+
+    .contenedor-presupuesto p {
+        font-size: 2.4rem;
+        text-align: center;
+        color: var(--dark-gray);
+    }
+
+    @media (min-width: 768px) {
+        .contenedor-presupuesto p {
+            text-align: left;
+        }
+    }
+
+    .contenedor-presupuesto span {
+        font-weight: 900;
+        color: var(--blue);
+    }
 </style>
